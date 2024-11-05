@@ -6,6 +6,8 @@ import org.example.garden_me.repository.PlantRepository;
 import org.example.garden_me.service.PlantService;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Optional;
 
 @RequiredArgsConstructor
@@ -33,4 +35,13 @@ public class PlantServiceImpl implements PlantService {
         plantRepository.deleteById(id);
     }
 
+    @Override
+    public List<Plant> getAllPlants() {
+        return plantRepository.findAllPlants();
+    }
+
+    @Override
+    public List<Plant> sortPlants() {
+        return plantRepository.findAllPlants();
+    }
 }

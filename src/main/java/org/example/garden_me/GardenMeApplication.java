@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import java.time.LocalDate;
+import java.util.Collections;
 
 @SpringBootApplication
 @RequiredArgsConstructor
@@ -41,6 +42,7 @@ public class GardenMeApplication {
 
             System.out.println(garden1);
             System.out.println(garden2);
+
         };
     }
 }

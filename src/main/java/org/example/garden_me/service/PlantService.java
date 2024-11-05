@@ -10,4 +10,6 @@ public interface PlantService {
     Optional<Plant> addNewPlant(Plant plant);
     Optional<Plant> updatePlant(Plant plant);
     void deletePlant(Integer id);
+    List<Plant> getAllPlants();
+    List<Plant> sortPlants();
 }

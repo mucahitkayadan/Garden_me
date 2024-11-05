@@ -52,4 +52,5 @@ public class Plant {
                 ", plantDate=" + plantDate +
                 '}';
     }
+
 }
