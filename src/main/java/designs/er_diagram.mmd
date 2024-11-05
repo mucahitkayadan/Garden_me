@@ -1,0 +1,14 @@
+erDiagram
+    GARDEN || -- |{ PLANT : has
+    GARDEN{
+        Integer gardenID PK
+        String gardenName
+        Double gardenSize
+        List[Plant] plant  FK
+    }
+    PLANT{
+        Integer plantId PK
+        String plantName
+        String plantType
+        LocalDate plantDate
+    }
